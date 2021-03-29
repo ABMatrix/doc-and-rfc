@@ -1,4 +1,4 @@
-#Setup IPFS private network over geo-distributed nodes
+# Setup private IPFS network
 
 *Author: Nathan Yang*
 
