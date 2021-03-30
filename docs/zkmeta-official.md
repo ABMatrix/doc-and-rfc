@@ -6,7 +6,7 @@ Authors: Chris Guo, Kyrie Lu, Nathan Yang
 * [What is ZK-Meta](#what-is-zk-meta)
 * [What goals is ZK-Meta trying to accomplish](#what-goals-is-zk-meta-trying-to-accomplish)
 * [What makes ZK-Meta so special](#what-makes-zk-meta-so-special)
-* [ZK-Meta architecture](#zk-meta-achitecture)
+* [ZK-Meta architecture](#zk-meta-architecture)
 * [What is X-Matrix Labs](#what-is-x-matrix-labs)
 * [What are X-Matrix Labs's main focuses](#what-are-x-matrix-labss-focuses)
     * [Gateway](#gateway)
@@ -46,35 +46,49 @@ The top 3 features of the ZK-Rollup protocol are:
 1. Trustless protocols;
 1. Cryptographically secure, similar to the Ethereum mainnet.
 
-## ZK-Meta Achitecture
+The Rollup validator(s) can never corrupt the state or steal funds (unlike Sidechains).
+Users can always retrieve the funds from the Rollup even if validators stop cooperating
+   because the data is available (unlike Plasma).
+Thanks to validity proofs, neither users nor a single trusted party needs to be online to monitor Rollup blocks
+   in order to prevent fraud (unlike payment channels or Optimistic Rollups).
+
+## ZK-Meta Architecture
 * **Core layer**
-  the core layer is built on top of the newest theoretical breakthroughs of Zero-Knowledge-Proof (ZKP)
+  is built on top of the newest theoretical breakthroughs of Zero-Knowledge-Proof (ZKP)
   such as optimizations of performance, trust setting and security,
   all of which will be published in academic papers.
 
 * **Platform layer**
-  a platform where wallets with novel features can be developed to support features
-  such as privacy-preserving or offline transactions
-  that include multi-party signing and are adaptable to multiple blockchains.
+  is where wallets with novel features can be developed.
+  It supports privacy-preserving and offline transactions and
+  multi-party signing, and is adaptable to multiple blockchains.
   On the platform, you can improve the current ZKP toolkits as well as their documentation.
-  Similar concepts are borrowed from the ZK-Sync and AZTEC projects.
+  Similar concepts are borrowed from the zkSync and AZTEC projects.
+  1. zkSync as a scaling solution is capable of making transfers and doing them quickly and cheaply.
+  2. zkSync is smart-contract friendly.
+  3. zkSync is friendly for exchanges.
+     This includes, in particular, the following claims:
+        1. Double-spends in Rollup are not possible;
+        2. Rollup always operates under full reserve;
+           the total supply of each asset type in rollup is equal to the sum of all its deposited amounts minus sum of all its withdrawn amounts;
+        3. Root hash is always correct and L2 state can not be corrupted;
+        4. A state can always be restored from the calldata published to L1;
+        5. The smart contract can not be locked out.
+  4. Finally, zkSync support is implemented for all the main platforms.
+  
   The platform has its own value exchange protocols to leverage privacy-preserving data.
-  In addition, the platform can perform 4 arithmetic operations and logic comparisons on the encrypted data.
-  The main features of the platform include the following:
-    1. Straightforward: no overhead on user operations; no additional knowledge is needed to use the protocol;
-    1. Decentralized: users fully own their data without compromise;
-    1. Fast: proofs are generated and verified within milliseconds;
-    1. Secure: rigorous cryptographic proof.
+  In addition, the platform can perform the 4 basic arithmetic operations,
+  range proof and size comparisons on encrypted data.
 
 * **Application layer**
   captures the latest market trend and supports fast prototyping.
   In a short term, this layer aims at Non-Fungible Tokens (NFT) and anonymous auction.
 
 ## What is X-Matrix Labs?
-X-matrix Labs is an R&D team passionate about Cryptography, blockchain, and math.
+X-Matrix Labs is a research and development team passionate about cryptography, blockchain, and math.
 The team consists of researchers from prestigious institutes and professionals from engineering and financial industries.
 Our mission is to build a decentralized network to empower Web 3.0.
-We focus on Open Finance, Cross-chain Compatibility, and privacy-preserving transparency.
+We focus on open finance, cross-chain compatibility, and privacy-preserving transparency.
 We aim to empower the Web 3.0 networks by making the network smoother, more secure, and more boundaryless.
 
 ## What are X-Matrix Labs's focuses?
@@ -82,7 +96,7 @@ We aim to empower the Web 3.0 networks by making the network smoother, more secu
 We aim to build gateways among data, digital assets, and smart contracts to maximize the value of data through blockchain technologies and eventually to make Web3 smoother.
 
 ### Privacy
-X-matrix Lab has industry-leading cryptography and privacy research lab to provide ZKP-based solutions for Web3.\
+X-Matrix Labs has an industry-leading cryptography and privacy research lab that provides ZKP-based solutions for Web3.\
 Users take full ownership of their private data in a trustless setting.
 
 ### De-Fi
@@ -97,7 +111,7 @@ X-Matrix Labs has sufficient experience in distributed file systems such as IPFS
 ### Privacy-related
 * [Findora](#https://findora.org)
 * [Horizen](#https://www.horizen.io)
-* [ZK-Sync](#https://zksync.io/)
+* [zkSync](#https://zksync.io/)
 * [aztec](#https://aztec.network/index.html)
 * [WeDPR](#https://wedpr-lab.readthedocs.io/zh_CN/latest/docs/introduction.html)
 
