@@ -29,7 +29,7 @@ Currently, ZkMeta includes Zero-Knowledge Proof (ZKP) protocols such as ZK-3D an
 ZkMeta has a modularized design that fully embraces operability and configurability.
 With ZkMeta, you can get a full package with the most secure, reliable and pluggable
 privacy-preserving services with formidable cryptographic support.
-Finally, ZkMeta ensures that data is censored, trackable, verifiable and not tempered with.
+Finally, ZkMeta ensures that data is censored, trackable, verifiable and not tampered with.
 
 ## What makes ZkMeta so special?
 The ZK3D protocol of ZkMeta realizes value transfer in a setting where data is fully private.
