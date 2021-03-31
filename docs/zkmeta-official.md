@@ -1,12 +1,12 @@
-# ZK-Meta and X-Matrix Labs
+# ZkMeta and X-Matrix Labs
 
 Authors: Chris Guo, Kyrie Lu, Nathan Yang
 
 ## Table of Contents
-* [What is ZK-Meta](#what-is-zk-meta)
-* [What goals is ZK-Meta trying to accomplish](#what-goals-is-zk-meta-trying-to-accomplish)
-* [What makes ZK-Meta so special](#what-makes-zk-meta-so-special)
-* [ZK-Meta architecture](#zk-meta-architecture)
+* [What is ZkMeta](#what-is-zkmeta)
+* [What goals is ZkMeta trying to accomplish](#what-goals-is-zkmeta-trying-to-accomplish)
+* [What makes ZkMeta so special](#what-makes-zkmeta-so-special)
+* [ZkMeta architecture](#zkmeta-architecture)
 * [What is X-Matrix Labs](#what-is-x-matrix-labs)
 * [What are X-Matrix Labs's main focuses](#what-are-x-matrix-labss-focuses)
     * [Gateway](#gateway)
@@ -17,22 +17,22 @@ Authors: Chris Guo, Kyrie Lu, Nathan Yang
     * [Privacy related](#privacy-related)
     * [Labs design](#labs-design)
 
-## What is ZK-Meta?
-ZK-Meta is a privacy protection computing framework developed by X-Matrix Labs.
-In essence, ZK-Meta is a Web3.0 privacy protection infrastructure that aims to protect user and business data
+## What is ZkMeta?
+ZkMeta is a privacy protection computing framework developed by X-Matrix Labs.
+In essence, ZkMeta is a Web3.0 privacy protection infrastructure that aims to protect user and business data
 in lieu of the General Data Protection Regulation (GDPR).
-ZK-Meta provides customized privacy preserving solutions suitable for various businesses.
-In addition, ZK-Meta offers pre-optimized technical selections and solutions.
-Currently, ZK-Meta includes Zero-Knowledge Proof (ZKP) protocols such as ZK-3D and ZK-Rollup.
+ZkMeta provides customized privacy preserving solutions suitable for various businesses.
+In addition, ZkMeta offers pre-optimized technical selections and solutions.
+Currently, ZkMeta includes Zero-Knowledge Proof (ZKP) protocols such as ZK-3D and ZK-Rollup.
 
-## What goals is ZK-Meta trying to accomplish?
-ZK-Meta has a modularized design that fully embraces operability and configurability.
-With ZK-Meta, you can get a full package with the most secure, reliable and pluggable
+## What goals is ZkMeta trying to accomplish?
+ZkMeta has a modularized design that fully embraces operability and configurability.
+With ZkMeta, you can get a full package with the most secure, reliable and pluggable
 privacy-preserving services with formidable cryptographic support.
-Finally, ZK-Meta ensures that data is censored, trackable, verifiable and not tempered with.
+Finally, ZkMeta ensures that data is censored, trackable, verifiable and not tempered with.
 
-## What makes ZK-Meta so special?
-The ZK3D protocol of ZK-Meta realizes value transfer in a setting where data is fully private.
+## What makes ZkMeta so special?
+The ZK3D protocol of ZkMeta realizes value transfer in a setting where data is fully private.
 This protocol is capable of performing 4 arithmetic operations, range proof and size comparison on encrypted data.
 There are 4 outstanding features of the ZK3D protocol:
 1. Straightforward: no overhead on user operations; no additional knowledge is needed to use the protocol;
@@ -40,7 +40,7 @@ There are 4 outstanding features of the ZK3D protocol:
 1. Fast: proofs are generated and verified within milliseconds;
 1. Secure: rigorous cryptographic proof.
 
-In addition, the ZK-Rollup protocol of ZK-Meta utilizes the most up-to-date PLONK ZKP algorithm as PLONK does Trust Setup for only once.
+In addition, the ZK-Rollup protocol of ZkMeta utilizes the most up-to-date PLONK ZKP algorithm as PLONK does Trust Setup for only once.
 The top 3 features of the ZK-Rollup protocol are:
 1. Extremely low transaction fees;
 1. Trustless protocols;
@@ -52,7 +52,7 @@ Users can always retrieve the funds from the Rollup even if validators stop coop
 Thanks to validity proofs, neither users nor a single trusted party needs to be online to monitor Rollup blocks
    in order to prevent fraud (unlike payment channels or Optimistic Rollups).
 
-## ZK-Meta Architecture
+## ZkMeta Architecture
 * **Core layer**
   is built on top of the newest theoretical breakthroughs of Zero-Knowledge-Proof (ZKP)
   such as optimizations of performance, trust setting and security,
