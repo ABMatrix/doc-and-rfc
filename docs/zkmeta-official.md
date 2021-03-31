@@ -98,14 +98,14 @@ X-Matrix Labs has sufficient experience in distributed file systems such as IPFS
 
 ## References
 ### Privacy-related
-* [Findora](#https://findora.org)
-* [Horizen](#https://www.horizen.io)
-* [zkSync](#https://zksync.io/)
-* [aztec](#https://aztec.network/index.html)
-* [WeDPR](#https://wedpr-lab.readthedocs.io/zh_CN/latest/docs/introduction.html)
+* [Findora](https://findora.org)
+* [Horizen](https://www.horizen.io)
+* [zkSync](https://zksync.io/)
+* [aztec](https://aztec.network/index.html)
+* [WeDPR](https://wedpr-lab.readthedocs.io/zh_CN/latest/docs/introduction.html)
 
 ### Labs design
-* [Parity](#https://www.parity.io/)
-* [Polkadot](#https://polkadot.network/)
-* [VeuTelescope](#https://vuetelescope.com/explore?ui.slug=buefy&framework_null=true&_sort=lastDetectedAt%3Adesc)
-* [Leasy](#https://leasy.co/)
+* [Parity](https://www.parity.io/)
+* [Polkadot](https://polkadot.network/)
+* [VeuTelescope](https://vuetelescope.com/explore?ui.slug=buefy&framework_null=true&_sort=lastDetectedAt%3Adesc)
+* [Leasy](https://leasy.co/)
