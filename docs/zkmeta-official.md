@@ -64,17 +64,6 @@ Thanks to validity proofs, neither users nor a single trusted party needs to be 
   multi-party signing, and is adaptable to multiple blockchains.
   On the platform, you can improve the current ZKP toolkits as well as their documentation.
   Similar concepts are borrowed from the zkSync and AZTEC projects.
-  1. zkSync as a scaling solution is capable of making transfers and doing them quickly and cheaply.
-  2. zkSync is smart-contract friendly.
-  3. zkSync is friendly for exchanges.
-     This includes, in particular, the following claims:
-        1. Double-spends in Rollup are not possible;
-        2. Rollup always operates under full reserve;
-           the total supply of each asset type in rollup is equal to the sum of all its deposited amounts minus sum of all its withdrawn amounts;
-        3. Root hash is always correct and L2 state can not be corrupted;
-        4. A state can always be restored from the calldata published to L1;
-        5. The smart contract can not be locked out.
-  4. Finally, zkSync support is implemented for all the main platforms.
   
   The platform has its own value exchange protocols to leverage privacy-preserving data.
   In addition, the platform can perform the 4 basic arithmetic operations,
