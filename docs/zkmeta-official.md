@@ -74,6 +74,10 @@ Thanks to validity proofs, neither users nor a single trusted party needs to be 
   In a short term, this layer aims at Non-Fungible Tokens (NFT) and anonymous auction.
 
 ## What is X-Matrix Labs?
+**The New Era of Internet**
+
+*Surf the Internet with the supreme experience -- smooth, privacy preserved, and boundaryless*
+
 X-Matrix Labs is a research and development team passionate about cryptography, blockchain, and math.
 The team consists of researchers from prestigious institutes and professionals from engineering and financial industries.
 Our mission is to build a decentralized network to empower Web 3.0.
