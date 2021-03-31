@@ -11,7 +11,7 @@ Authors: Chris Guo, Kyrie Lu, Nathan Yang
 * [What are X-Matrix Labs's main focuses](#what-are-x-matrix-labss-focuses)
     * [Gateway](#gateway)
     * [Privacy](#privacy)
-    * [De-Fi](#de-fi)
+    * [DeFi](#defi)
     * [Storage](#storage)
 * [References](#references)
     * [Privacy related](#privacy-related)
@@ -92,7 +92,7 @@ We aim to build gateways among data, digital assets, and smart contracts to maxi
 X-Matrix Labs has an industry-leading cryptography and privacy research lab that provides ZKP-based solutions for Web3.\
 Users take full ownership of their private data in a trustless setting.
 
-### De-Fi
+### DeFi
 Stone Protocol is the only yield management protocol focused on creating *Rock Solid Yield* for all users in the DeFi ecosystem.
 X-Matrix Labs is dedicated to building the next-generation cross-chain DeFi protocols on top of the Substrate framework.
 We aim to boost the value flow between multiple platforms and create *Rock Solid Yield* for millions of users.
