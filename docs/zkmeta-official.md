@@ -11,7 +11,7 @@ Authors: Chris Guo, Kyrie Lu, Nathan Yang
 * [What are X-Matrix Labs's main focuses](#what-are-x-matrix-labss-focuses)
     * [Gateway](#gateway)
     * [Privacy](#privacy)
-    * [De-Fi](#de-fi)
+    * [DeFi](#defi)
     * [Storage](#storage)
 * [References](#references)
     * [Privacy related](#privacy-related)
@@ -29,7 +29,7 @@ Currently, ZkMeta includes Zero-Knowledge Proof (ZKP) protocols such as ZK-3D an
 ZkMeta has a modularized design that fully embraces operability and configurability.
 With ZkMeta, you can get a full package with the most secure, reliable and pluggable
 privacy-preserving services with formidable cryptographic support.
-Finally, ZkMeta ensures that data is censored, trackable, verifiable and not tempered with.
+Finally, ZkMeta ensures that data is censored, trackable, verifiable and not tampered with.
 
 ## What makes ZkMeta so special?
 The ZK3D protocol of ZkMeta realizes value transfer in a setting where data is fully private.
@@ -74,6 +74,10 @@ Thanks to validity proofs, neither users nor a single trusted party needs to be 
   In a short term, this layer aims at Non-Fungible Tokens (NFT) and anonymous auction.
 
 ## What is X-Matrix Labs?
+**The New Era of Internet**
+
+*Surf the Internet with the supreme experience -- smooth, privacy preserved, and boundaryless*
+
 X-Matrix Labs is a research and development team passionate about cryptography, blockchain, and math.
 The team consists of researchers from prestigious institutes and professionals from engineering and financial industries.
 Our mission is to build a decentralized network to empower Web 3.0.
@@ -88,7 +92,7 @@ We aim to build gateways among data, digital assets, and smart contracts to maxi
 X-Matrix Labs has an industry-leading cryptography and privacy research lab that provides ZKP-based solutions for Web3.\
 Users take full ownership of their private data in a trustless setting.
 
-### De-Fi
+### DeFi
 Stone Protocol is the only yield management protocol focused on creating *Rock Solid Yield* for all users in the DeFi ecosystem.
 X-Matrix Labs is dedicated to building the next-generation cross-chain DeFi protocols on top of the Substrate framework.
 We aim to boost the value flow between multiple platforms and create *Rock Solid Yield* for millions of users.

@@ -98,6 +98,31 @@ export LIBP2P_FORCE_PNET=1
 ipfs daemon init
 ```
 
+In order to run IPFS daemon continuously as a system service in the background,
+we need to create a **systemd** service.
+Before we do, make sure you kill the existing IPFS daemon process or docker container.
+Then, run `sudo vim /etc/systemd/system/ipfs.service` and put the following in the editor:
+```
+[Unit]
+Description=IPFS Daemon
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+Environment="IPFS_PATH=/path/to/.ipfs"
+ExecStart=/path/to/ipfs daemon --enable-namesys-pubsub
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+Once you are done, save and close the editor and then apply the service,
+```shell
+sudo systemctl daemon-reload
+sudo systemctl enable ipfs
+sudo systemctl start ipfs
+sudo systemctl status ipfs
+```
 
 ### Generate swarm key **ONLY** for the master IPFS node
 
@@ -130,10 +155,55 @@ ipfs-cluster-service daemon
 ## e.g.,
 ## ipfs-cluster-service daemon --bootstrap /ip4/113.215.188.40/tcp/9096/ipfs/QmYe4arGjA48CBnNeEQZ7UNbYMr9eTvzn231taVBVCxakz
 ipfs-cluster-service daemon --bootstrap <multiaddr>
-
 ```
 
-### Troubleshootings
+In order to run IPFS cluster daemon continuously as a system service in the background,
+we need to create a **systemd** service for it.
+Before we do, make sure you kill the existing IPFS cluster daemon process or docker container.
+Then, run `sudo vim /etc/systemd/system/ipfs-cluster.service`.
+
+**Attention**, _for the bootstrap node_, put the following in the editor:
+```
+[Unit]
+Description=IPFS-Cluster Daemon
+Requires=ipfs
+After=syslog.target network.target remote-fs.target nss-lookup.target ipfs
+
+[Service]
+Type=simple
+ExecStart=/path/to/ipfs-cluster-service daemon
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+
+_for non-bootstrap node_, put the following instead:
+```shell
+[Unit]
+Description=IPFS-Cluster Daemon
+Requires=ipfs
+After=syslog.target network.target remote-fs.target nss-lookup.target ipfs
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ipfs-cluster-service daemon --bootstrap /ip4/<ip_of_bootstrap_node>/tcp/9096/p2p/<peerID_of_bootstrap_node>
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+Once you are done, save and close the editor and then apply the service,
+```shell
+sudo systemctl daemon-reload
+sudo systemctl enable ipfs-cluster
+sudo systemctl start ipfs-cluster
+sudo systemctl status ipfs-cluster
+```
+
+### Troubleshooting
 1. if you encounter the situation where the cluster daemon can't start successfully or where you see can't run the `ipfs-cluster-ctl` command properly, it's most likely that there's a messy raft state. In this case, you may want to stop the cluster and then run `ipfs-cluster-service state cleanup`. Finally, start the cluster again. **TODO:** we may want to be more intelligent on restarting the cluster process.
 2. to avoid getting the error saying `dial tcp 127.0.0.1:5001: connect: connection refused`, modify the `.ipfs-cluster/service.json` file to have the following fields correctly set
 
