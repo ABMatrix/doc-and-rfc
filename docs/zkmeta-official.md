@@ -76,7 +76,7 @@ in order to prevent fraud (unlike payment channels or Optimistic Rollups).
 ## What is X-Matrix Labs?
 **Shape up web 3.0 - the new era of internet**
 
-*Return privacy to web 3.0 users and provide a supreme experience - smooth, privacy preserved and boundaryless*
+*Return privacy to web 3.0 users and provide a supreme experience - smooth, privacy preserved and borderless*
 
 X-Matrix Labs is a research and development organization passionate about cryptography, distributed system and math.
 The team consists of researchers from prestigious institutes and professionals with engineering and financial backgrounds.
@@ -87,7 +87,7 @@ We aim to empower the Web 3.0 networks by making the network smoother, more secu
 ## What are X-Matrix Labs's focuses?
 ### Cross-chain bridge
 Web3 shall be inclusive.
-We are building gateways and bridges to allow data, digital assets and smart contracts to transfer freely through different blockchains.
+We are building gateways and bridges to allow data, digital assets and smart contracts to transfer frelly through different blockchains.
 
 ### Privacy
 Web3 gives back data ownership and privacy to everyone in a trustless setting.
@@ -95,7 +95,7 @@ X-Matrix Labs has an industry-leading cryptography and privacy research lab that
 
 ### Decentralized Finance (DEFI)
 Web3 revolutionalizes how values are stored and exchanged.
-We are experimenting next-generation DEFI on the substrate framework for high security and throughput.
+We are experimenting next-generation DeFi on the substrate framework for high security and throughput.
 
 ### Storage
 Web3 democratizes data storage.
