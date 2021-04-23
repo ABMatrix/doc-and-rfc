@@ -9,13 +9,13 @@ Authors: Chris Guo, Kyrie Lu, Nathan Yang
 * [ZkMeta architecture](#zkmeta-architecture)
 * [What is X-Matrix Labs](#what-is-x-matrix-labs)
 * [What are X-Matrix Labs's main focuses](#what-are-x-matrix-labss-focuses)
-    * [Gateway](#gateway)
-    * [Privacy](#privacy)
-    * [DeFi](#defi)
-    * [Storage](#storage)
+  * [Cross-chain bridge](#cross-chain-bridge)
+  * [Privacy](#privacy)
+  * [Decentralized Finance (DEFI)](#decentralized-finance-defi)
+  * [Storage](#storage)
 * [References](#references)
-    * [Privacy related](#privacy-related)
-    * [Labs design](#labs-design)
+  * [Privacy related](#privacy-related)
+  * [Labs design](#labs-design)
 
 ## What is ZkMeta?
 ZkMeta is a privacy protection computing framework developed by X-Matrix Labs.
@@ -48,9 +48,9 @@ The top 3 features of the ZK-Rollup protocol are:
 
 The Rollup validator(s) can never corrupt the state or steal funds (unlike Sidechains).
 Users can always retrieve the funds from the Rollup even if validators stop cooperating
-   because the data is available (unlike Plasma).
+because the data is available (unlike Plasma).
 Thanks to validity proofs, neither users nor a single trusted party needs to be online to monitor Rollup blocks
-   in order to prevent fraud (unlike payment channels or Optimistic Rollups).
+in order to prevent fraud (unlike payment channels or Optimistic Rollups).
 
 ## ZkMeta Architecture
 * **Core layer**
@@ -64,7 +64,7 @@ Thanks to validity proofs, neither users nor a single trusted party needs to be 
   multi-party signing, and is adaptable to multiple blockchains.
   On the platform, you can improve the current ZKP toolkits as well as their documentation.
   Similar concepts are borrowed from the zkSync and AZTEC projects.
-  
+
   The platform has its own value exchange protocols to leverage privacy-preserving data.
   In addition, the platform can perform the 4 basic arithmetic operations,
   range proof and size comparisons on encrypted data.
@@ -74,31 +74,32 @@ Thanks to validity proofs, neither users nor a single trusted party needs to be 
   In a short term, this layer aims at Non-Fungible Tokens (NFT) and anonymous auction.
 
 ## What is X-Matrix Labs?
-**The New Era of Internet**
+**Shape up web 3.0 - the new era of internet**
 
-*Surf the Internet with the supreme experience -- smooth, privacy preserved, and boundaryless*
+*Return privacy to web 3.0 users and provide a supreme experience - smooth, privacy preserved and boundaryless*
 
-X-Matrix Labs is a research and development team passionate about cryptography, blockchain, and math.
-The team consists of researchers from prestigious institutes and professionals from engineering and financial industries.
-Our mission is to build a decentralized network to empower Web 3.0.
+X-Matrix Labs is a research and development organization passionate about cryptography, distributed system and math.
+The team consists of researchers from prestigious institutes and professionals with engineering and financial backgrounds.
+Our mission is to design solutions and build robust and privacy-preserved infrastructures to empower Web 3.0.
 We focus on open finance, cross-chain compatibility, and privacy-preserving transparency.
 We aim to empower the Web 3.0 networks by making the network smoother, more secure, and more boundaryless.
 
 ## What are X-Matrix Labs's focuses?
-### Gateway
-We aim to build gateways among data, digital assets, and smart contracts to maximize the value of data through blockchain technologies and eventually to make Web3 smoother.
+### Cross-chain bridge
+Web3 shall be inclusive.
+We are building gateways and bridges to allow data, digital assets and smart contracts to transfer freely through different blockchains.
 
 ### Privacy
-X-Matrix Labs has an industry-leading cryptography and privacy research lab that provides ZKP-based solutions for Web3.\
-Users take full ownership of their private data in a trustless setting.
+Web3 gives back data ownership and privacy to everyone in a trustless setting.
+X-Matrix Labs has an industry-leading cryptography and privacy research lab that provides Zero Knowledge Proof solutions for Web3.
 
-### DeFi
-Stone Protocol is the only yield management protocol focused on creating *Rock Solid Yield* for all users in the DeFi ecosystem.
-X-Matrix Labs is dedicated to building the next-generation cross-chain DeFi protocols on top of the Substrate framework.
-We aim to boost the value flow between multiple platforms and create *Rock Solid Yield* for millions of users.
+### Decentralized Finance (DEFI)
+Web3 revolutionalizes how values are stored and exchanged.
+We are experimenting next-generation DEFI on the substrate framework for high security and throughput.
 
 ### Storage
-X-Matrix Labs has sufficient experience in distributed file systems such as IPFS and Filecoin to empower our data storage systems.
+Web3 democratizes data storage.
+X-Matrix Labs has been developing infrastructure for IPFS and Filecoin.
 
 ## References
 ### Privacy-related
