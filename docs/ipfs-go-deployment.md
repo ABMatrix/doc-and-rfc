@@ -161,25 +161,18 @@ In order to run IPFS cluster daemon continuously as a system service in the back
 we need to create a **systemd** service for it.
 Before we do, make sure you kill the existing IPFS cluster daemon process or docker container.
 Then, run `sudo vim /etc/systemd/system/ipfs-cluster.service`.
-
-**Attention**, _for the bootstrap node_, put the following in the editor:
+**In order for nodes to establish conection with other nodes in the same cluster, we recommend that all nodes have their own public IP addresses or at least have their ports correctly forwarded.**
+In our case, we have the following peer multi-addresses:
 ```
-[Unit]
-Description=IPFS-Cluster Daemon
-Requires=ipfs
-After=syslog.target network.target remote-fs.target nss-lookup.target ipfs
-
-[Service]
-Type=simple
-ExecStart=/path/to/ipfs-cluster-service daemon
-Restart=on-failure
-User=root
-
-[Install]
-WantedBy=multi-user.target
+/dns4/office.xupernode.com/tcp/9096/p2p/12D3KooWC7z4oKXySjC7oRyf6PYiyNb9g3CSQViuPo29TNdno4SY
+/dns4/office.xupernode.com/tcp/19096/p2p/12D3KooWSUD86LGNaFGa6JjXULix4ivxB7UQMiJgx3Ui84oPT6cY
+/dns4/office.xupernode.com/tcp/59096/p2p/12D3KooW9qNxNkSdfSaBYCcjGQ9ZhND6mzR8DTWyn8T466Fohvv9
+/ip4/223.95.197.18/tcp/9096/p2p/12D3KooWL3T4oxofDknuoLprQgfvTaUe34SALakWrkKP8nuKvk1g
+/ip4/223.95.197.18/tcp/59096/p2p/12D3KooWHVzbaBL5CQKTUF39nrn99NV1eCLMQwp39KyTdqs95S3F
+/ip4/183.134.63.194/tcp/9096/p2p/12D3KooWFePcN6YaJXHG6cSNvnXdZi2boqmzvXoAhCVGzWrgHcfL
 ```
 
-_for non-bootstrap node_, put the following instead:
+Use the above multi-addresses as the bootstrap nodes for each cluster node and put the following into the service file:
 ```shell
 [Unit]
 Description=IPFS-Cluster Daemon
@@ -188,7 +181,7 @@ After=syslog.target network.target remote-fs.target nss-lookup.target ipfs
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/ipfs-cluster-service daemon --bootstrap /ip4/<ip_of_bootstrap_node>/tcp/9096/p2p/<peerID_of_bootstrap_node>
+ExecStart=/usr/bin/ipfs-cluster-service daemon --bootstrap /dns4/office.xupernode.com/tcp/9096/p2p/12D3KooWC7z4oKXySjC7oRyf6PYiyNb9g3CSQViuPo29TNdno4SY,/dns4/office.xupernode.com/tcp/19096/p2p/12D3KooWSUD86LGNaFGa6JjXULix4ivxB7UQMiJgx3Ui84oPT6cY,/dns4/office.xupernode.com/tcp/59096/p2p/12D3KooW9qNxNkSdfSaBYCcjGQ9ZhND6mzR8DTWyn8T466Fohvv9,/ip4/223.95.197.18/tcp/9096/p2p/12D3KooWL3T4oxofDknuoLprQgfvTaUe34SALakWrkKP8nuKvk1g,/ip4/223.95.197.18/tcp/59096/p2p/12D3KooWHVzbaBL5CQKTUF39nrn99NV1eCLMQwp39KyTdqs95S3F,/ip4/183.134.63.194/tcp/9096/p2p/12D3KooWFePcN6YaJXHG6cSNvnXdZi2boqmzvXoAhCVGzWrgHcfL
 Restart=on-failure
 User=root
 
